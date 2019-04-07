@@ -1,18 +1,15 @@
-//
-//  ViewController.swift
-//  FiveRatings
-//
-//  Created by 永見彰宏 on 2019/04/07.
-//  Copyright © 2019 永見彰宏. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var colorLessStarButton: UIButton!
+    @IBOutlet weak var yellowStarButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        colorLessStarButton.setImage(UIImage.init(named: "colorless_star_icon.png"), for: UIControl.State.normal)
+        yellowStarButton.setImage(UIImage.init(named: "yellow_star_icon.png"), for: UIControl.State.normal)
     }
 
 
